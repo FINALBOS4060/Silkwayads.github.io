@@ -1,0 +1,9 @@
+{
+  "name": "SilkwayAD Premium",
+  "description": "O'zbekiston va Tojikistonni bog'lovchi universal e'lonlar platformasi. Somon.tj va OLX.uz ning barcha ilg'or funksiyalari bilan.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation"
+  ]
+}

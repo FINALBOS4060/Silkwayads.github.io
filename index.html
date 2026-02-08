@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silkway ADS — Universal E'lonlar Platformasi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: { 
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: { 
+              silkBlue: '#0052FF',
+              deepBlue: '#0035CC',
+              softBlue: '#F0F5FF',
+              silkYellow: '#FFD700',
+              bgGray: '#F8FAFC',
+              textPrimary: '#0F172A',
+              textSecondary: '#64748B'
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body { background-color: #F8FAFC; color: #0F172A; -webkit-font-smoothing: antialiased; letter-spacing: -0.01em; }
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      
+      .ad-card-standard {
+        background: #fff;
+        border: 1px solid #E2E8F0;
+        border-radius: 16px;
+        transition: all 0.2s ease;
+      }
+      .ad-card-standard:hover {
+        border-color: #0052FF;
+        box-shadow: 0 10px 30px rgba(0, 82, 255, 0.08);
+        transform: translateY(-2px);
+      }
+      
+      .standard-grid { 
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 12px; 
+      }
+      @media (min-width: 1024px) { .standard-grid { grid-template-columns: repeat(4, 1fr); gap: 20px; } }
+
+      .nav-pill {
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(20px);
+        box-shadow: 0 -4px 30px rgba(0,0,0,0.05);
+        border-top: 1px solid #E2E8F0;
+      }
+
+      .animate-fade-in { animation: fadeIn 0.3s ease-out; }
+      @keyframes fadeIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.39.0",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0",
+    "recharts": "https://esm.sh/recharts@^3.7.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="app"></div>
+    <script type="module" src="index.tsx"></script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
